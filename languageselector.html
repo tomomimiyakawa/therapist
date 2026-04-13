@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>My Website</title>
+    <link rel="stylesheet" href="languageselector.css">
+    <link rel="stylesheet" href="fonts.css">
+    
+</head>
+<body>
+    <div class="backdrop"></div>
+
+    <img src="Untitled-2.png" alt="gradient">
+
+
+
+
+    <h1>tomomi miyakawa</h1>
+    <h2>  みやかわ  ともみ</h2>
+    <h3>_____________________________</h3>
+    <h4>+44 (0) 7779 573959 <br> tomomi.miyakawa@gmail.com <br><br>  <a href="homeopathy.html"class="active">EN</a> <a href= "homeopathy-en-japonais.html">JP</a>
+    </h4>
+
+    
+    
+    
+    
+    <div class="dropdown">
+  <button class="dropbtn"> </button>
+  <div class="dropdown-content">
+    <a href="welcomeenglish.html">English</a>
+    <a href="welcomejapanese.html">日本語</a>
+    
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+    
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          const dropdown = document.querySelector('.dropdown');
+          const paragraph = document.querySelector('p');
+          const backdrop = document.querySelector('.backdrop');
+          if (dropdown && !dropdown.classList.contains('open')) {
+            dropdown.classList.add('open');
+            paragraph?.classList.add('hidden');
+            backdrop?.classList.add('active');
+          }
+        }, 500);
+      });
+    </script>
+
+</body>
+</html>
+    
+    

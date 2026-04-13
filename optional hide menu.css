@@ -1,0 +1,91 @@
+@media (max-width: 700px) and (hover: hover) {
+    .navbar {
+        display: none;
+
+    }
+    h1{
+        display:none;
+
+    }
+    h2{
+        display:none;
+
+    }
+    h3{
+        display:none;
+
+    }
+    h4{
+        display:none;
+
+    }
+
+
+
+    .dropbtn {
+  width: 50px;             /* make width = height for a circle */
+  height: 50px;
+  top: 28px;
+  right: 20px;
+  padding: 0;              /* keep padding zero when using fixed size */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-image: url('menu-icon.png');
+ 
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  font-size: 30px;        /* adjust for icon/text size */
+  outline: none;  -webkit-tap-highlight-color: transparent;
+  z-index: -1000;
+  
+  position: fixed;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+
+  position: relative;
+  
+  display: inline-block;
+ 
+  position: absolute;
+  top: 60px;    /* adjust vertical offset */
+  left: 40px;  /* distance from the right edge */
+  z-index: 1000;
+  position:fixed;
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+
+  min-width: 65vw;
+  
+
+  z-index: 1000;
+  position: absolute;
+  top: 200px;          /* directly below the button */
+  left: -200;            /* align left edges */
+ 
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 5px;    /* small gap */
+  will-change: opacity;
+  
+  
+ 
+}  
+
+
+}
+

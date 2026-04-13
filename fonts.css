@@ -1,0 +1,45 @@
+/* Regular */
+@font-face {
+    font-family: "didot";
+    src: url("Didot-01.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: "didot";
+    src: url("Didot-Italic-02.ttf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: "didot";
+    src: url("Didot-Bold-03") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+/* Regular / Light */
+@font-face {
+    font-family: "trade-gothic Lt";
+    src: url("lte50535.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: "trade-gothic Lt";
+    src: url("lte50539.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
+
+

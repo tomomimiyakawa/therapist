@@ -1,0 +1,660 @@
+html {
+  min-width: 800px;
+  
+  
+
+
+}
+
+
+
+body{
+    margin-right:40px;
+    margin-left:4px;
+    background-image: url('backgroundsuper.jpg');
+    background-size: auto;
+   
+    
+}
+
+
+
+
+
+h1{
+
+    
+    text-align:right;
+    font-family: trade-gothic Lt, sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.025em;
+    position:fixed;
+    right: 38px;
+    top:10px;
+    z-index: +1000;
+
+    
+    
+    
+
+}
+
+h4{
+    font-family: didot;
+}
+
+
+
+.footnote{
+    margin-top: 480px;
+    font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+    font-size: 12px;
+    
+    
+
+
+
+
+}
+
+
+
+
+
+
+
+.footnote2{
+    margin-top: 510px;
+    font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+    font-size: 12px;
+    margin-right:
+    
+
+
+}
+
+
+
+
+h2{
+    text-align:right;
+    font-family: didot, serif;
+    font-size: 20px;
+    margin-top: -20px;
+    position:fixed;
+    right: 38px;
+    top:90px;
+     z-index: +1000;
+
+
+
+    
+}
+
+
+
+a{
+
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    margin-right: 2px;
+
+
+
+    
+    
+
+
+
+
+}
+
+img{
+
+   
+
+
+
+
+
+
+}
+
+a.active{
+
+    color: rgb(105, 204, 194);
+
+
+
+
+
+}
+
+h3{
+    text-align:right;
+    font-family:didot,     serif;
+    font-size: 19px;
+    margin-top: -25px;
+    color: #000000;
+    position:fixed;
+    right: 38px;
+    top:110px;
+
+}
+    
+
+h4{
+    text-align:right;
+    font-family: didot, serif;
+    font-size: 12px;
+    margin-top: -20px;
+    color: #000000;
+    text-decoration: none;
+    position:fixed;
+    right: 38px;
+    top:130px;
+    
+}
+
+
+h5{
+    display:none
+}
+
+h6{
+    font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 25px;
+    font-style: normal;
+    color: #000000;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 320px;
+    margin-bottom: 20px;
+
+    
+
+
+}
+
+
+
+p.bullet-list {
+    padding-left: 30px;
+    text-indent: -30px;
+}
+
+ul.custom-list {
+    list-style: disc;
+    margin-left: 59px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul.custom-list li {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    margin-right: 320px;
+}
+
+
+
+
+.style2 {
+  width: 300px;
+  filter: grayscale(100%);
+  margin-left: 29px;
+  margin-right: none;
+  margin-top: 10px;
+}
+
+
+
+
+.style3 {
+  width: 150px;
+  filter: grayscale(100%);
+  margin-left: 374px;
+  margin-right: none;
+  margin-top: -115px;
+}
+
+
+
+
+
+
+
+p{
+   
+    font-family:     "Hiragino Mincho ProN",     "Yu Mincho",     serif;
+    font-size: 18px;
+    
+    color: #000000;
+    text-decoration: none;
+    margin-right: 320px;
+    margin-left: 40px;
+  
+    line-height: 1.5;
+    max-width: 800px;
+   transition: opacity 0.5s ease;
+   
+
+    
+    
+}
+
+
+
+
+
+.navbar{
+    text-align:right;
+    display:flex;
+    justify-content:flex-end;
+    gap:8px;
+    position:fixed;
+    right: 38px;
+    top:170px;
+   
+    
+
+
+
+}
+
+.navbar ul{
+    list-style-type: none;
+
+    
+    
+
+   
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+    font-family:     "Hiragino Mincho ProN",     "Yu Mincho",     serif;
+    display: inline-block;
+    background-color: #ffffff53;
+    margin: 5px;
+    margin-right: -0.01px;
+    width: 273px;
+    box-sizing: border-box;
+
+    /* ensure text doesn't touch edges */
+    padding: 7px 18px; /* 10px top/bottom, 18px left/right */
+    text-align: right;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.119);
+}
+
+.navbar a:hover {
+    background-color: #55555562;
+}
+
+
+.navbar a.active {
+    background-color: rgba(105, 204, 194, 0.388);
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+.navbar ul li{
+    
+}
+
+
+
+
+.dropbtn {
+  display: none;
+}
+
+.dropdown {
+
+  display: none;
+  
+}
+
+
+img{
+            float: left;
+            object-fit: contain;
+            width: calc(100% - 390px);
+            max-width: 800px;
+            margin-left: 40px;
+            margin-right: 350px;
+            margin-bottom: 40px;
+            margin-top:-13px;
+        
+
+
+        
+      
+
+        
+        
+
+    }
+
+@media (max-device-width: 600px) {
+    .scrollable-content {
+    position: relative;
+}
+
+.scrollable-content::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9) 68.91%);
+    pointer-events: none;
+    z-index: 10;
+}
+}
+
+
+@media (max-device-width: 600px) {
+    img{
+        float: left;
+        display:block;
+        object-fit: contain;
+
+
+        
+        width: 80vw;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        margin-top:-5px;
+        margin-bottom: 60px;
+
+
+        
+      
+
+        
+        
+
+    }
+}
+
+
+
+
+
+@media (max-device-width: 600px) {
+    h1{
+        font-size: 6vw;
+        margin-top:px;
+        
+        
+
+    }
+}
+
+
+@media (max-device-width: 600px) {
+    h2{
+        font-size: 3vw;
+        margin-top:28px;
+
+    }
+}
+
+@media (max-device-width: 600px) {
+    h3{
+        display:none;
+
+    }
+}
+
+@media (max-device-width: 600px) {
+    h4{
+        display:none;
+
+    }
+}
+
+
+@media (max-device-width: 600px) {
+    h5{
+        display:block;
+        font-size: 5vw;
+        color:#94484800
+
+    }
+}
+
+@media (max-device-width: 600px) {
+    h6{
+        font-size: 5vw;
+        z-index: -1000;
+        margin-left: 9vw;
+        margin-right: 6vw;
+       
+
+    }
+}
+
+
+@media (max-device-width: 600px) {
+    ul.custom-list li {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    margin-right: 6vw;
+    
+}
+}
+
+
+
+@media (max-device-width: 600px) {
+    ul.custom-list {
+    list-style: disc;
+    margin-left: 12.4vw;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+}
+
+
+
+
+
+
+@media (max-device-width: 600px) {
+    .navbar{
+   
+    display:none;
+    
+
+}
+}
+
+
+
+@media (max-device-width: 600px) {
+    p{
+        font-size: 4vw;
+        margin-top: 10vw;
+        margin-right: 6vw;
+        margin-left: 9vw;
+        transition: opacity 0.5s ease;
+    
+}
+}
+
+
+
+
+
+
+@media (max-device-width: 600px) {
+     /* Dropdown Button */
+.dropbtn {
+  width: 10vw;             /* make width = height for a circle */
+  height: 10vw;
+  padding: 0;              /* keep padding zero when using fixed size */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-image: url('menu-icon.png');
+ 
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  font-size: 30px;        /* adjust for icon/text size */
+  outline: none;  -webkit-tap-highlight-color: transparent;
+  z-index: -1000;
+  position: fixed;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+
+  position: relative;
+  
+  display: inline-block;
+ 
+  position: absolute;
+  top: 60px;    /* adjust vertical offset */
+  left: 40px;  /* distance from the right edge */
+  z-index: 1000;
+  position:fixed;
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+
+  min-width: 65vw;
+  
+
+  z-index: 1000;
+  position: absolute;
+  top: 200px;          /* directly below the button */
+  left: -200;            /* align left edges */
+ 
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 8vw;    /* small gap */
+  will-change: opacity;
+  
+  
+ 
+}  
+ 
+}
+
+/* Show dropdown with fade-in */
+.dropdown.open .dropdown-content {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+
+
+  color: black;
+  display:block;
+  padding: 18px 25px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.119);
+  background:#ffffff00;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 4vw;  
+  text-align: left;
+  margin: 15px;
+  
+}
+
+.dropdown-content a.active {
+  background-color: #9accd000;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  pointer-events: auto;
+
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('backgroundsuperformenu.jpg');
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+  will-change: opacity;
+}
+
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown.open {
+    transition: opacity 0.5s ease;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

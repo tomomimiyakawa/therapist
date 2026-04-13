@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>My Website</title>
+    <link rel="stylesheet" href="welcomeenglish.css">
+    <link rel="stylesheet" href="fonts.css">
+    
+</head>
+<body>
+    <div class="backdrop"></div>
+
+    <img src="Untitled-2.png" alt="gradient">
+
+
+
+
+    <h1>tomomi miyakawa</h1>
+    <h2>  みやかわ  ともみ</h2>
+    <h3>_____________________________</h3>
+    <h4>+44 (0) 7779 573959 <br> tomomi.miyakawa@gmail.com <br><br>  <a href="homeopathy.html"class="active">EN</a> <a href= "homeopathy-en-japonais.html">JP</a>
+    </h4>
+
+    
+    
+    
+    
+    <div class="dropdown">
+  <button class="dropbtn"> </button>
+  <div class="dropdown-content">
+    <a href="homeopathy-en-japonais.html" >ホメオパシー</a>
+    <a href="massage-en-japonais.html">マッサージ</a>
+    <a href="rythmicmovementtraining-en-japonais.html">R M T</a>
+    <a href="doula-en-japonais.html">ドゥーラ</a>
+
+    <br>
+    
+
+    <a href="about tomomi miyakawa-en-japonais.html"class="active">about tomomi miyakawa</a>
+    <a href="practiceandcontact-en-japonais.html">practice & contact</a>
+    <a href="links-en-japonais.html">links</a>
+
+
+    <br> 
+
+
+    <a href="welcomeenglish.html">English</a>
+
+  </div>
+  </div>
+</div>
+
+
+class="active"
+
+
+    <nav class="navbar">
+        <ul>
+            
+            <li><a href="homeopathy-en-japonais.html" >homeopathy</a></li>
+            <li><a href="massage-en-japonais.html">massage</a></li>
+            <li><a href="rythmicmovementtraining-en-japonais.html">rythmic movement training</a></li>
+            <li><a href="doula-en-japonais.html">doula</a></li>
+            <br> <br>
+            <li><a href="about tomomi miyakawa-en-japonais.html">about tomomi miyakawa</a></li>
+            <li><a href="practiceandcontact-en-japonais.html">practice & contact</a></li>
+            <li><a href="links-en-japonais.html">links</a></li>
+
+        </ul>
+    </nav>
+
+    <h4>
+
+    </h4>
+    
+    
+    
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          const dropdown = document.querySelector('.dropdown');
+          const paragraph = document.querySelector('p');
+          const backdrop = document.querySelector('.backdrop');
+          if (dropdown && !dropdown.classList.contains('open')) {
+            dropdown.classList.add('open');
+            paragraph?.classList.add('hidden');
+            backdrop?.classList.add('active');
+          }
+        }, 500);
+      });
+    </script>
+
+</body>
+</html>
+    
+    

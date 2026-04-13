@@ -1,0 +1,16 @@
+.scrollable-content {
+  height: 200px;           /* important: fixed height so it can scroll */
+  overflow-y: auto;
+
+  /* Fade effect */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 40px
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 40px
+  );
+}
