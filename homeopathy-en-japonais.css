@@ -571,11 +571,11 @@ img{
   display: block;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.8s ease;
 
   min-width: 65vw;
   
-
+  transition-delay: 0.2s;
   z-index: 1000;
   position: absolute;
   top: 200px;          /* directly below the button */
@@ -641,7 +641,7 @@ img{
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.2s ease;
   will-change: opacity;
 }
 

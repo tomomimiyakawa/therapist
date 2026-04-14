@@ -613,12 +613,13 @@ img{
   display: block;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.8s ease;
 
   min-width: 65vw;
   
 
   z-index: 1000;
+  transition-delay: 0.2s;
   position: absolute;
   top: 200px;          /* directly below the button */
   left: -200;            /* align left edges */
@@ -683,7 +684,7 @@ img{
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.2s ease;
   will-change: opacity;
 }
 
