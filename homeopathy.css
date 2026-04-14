@@ -221,6 +221,7 @@ h4{
 
 .link2{
     font-size: 18px;
+
 }
 
 
@@ -493,6 +494,18 @@ img{
 
     }
 }
+
+
+
+@media (max-device-width: 600px) {
+    .link2{
+        font-size: 4vw;
+        
+        
+
+    }
+}
+
 
 
 

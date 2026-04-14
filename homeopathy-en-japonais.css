@@ -458,6 +458,17 @@ img{
 }
 
 
+
+@media (max-device-width: 600px) {
+    .link2{
+        font-size: 4vw;
+        
+        
+
+    }
+}
+
+
 @media (max-device-width: 600px) {
     ul.custom-list li {
     font-family: "Libre Caslon Text", serif;
