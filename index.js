@@ -36,3 +36,117 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+const glow = document.querySelector('.overscroll-glow');
+
+let glowAmount = 0;
+let animating = false;
+
+window.addEventListener('wheel', (e) => {
+
+    const scrollPosition =
+        window.innerHeight + window.pageYOffset;
+
+    const pageHeight =
+        document.body.offsetHeight;
+
+    const nearBottom =
+        scrollPosition >= pageHeight - 2;
+
+    /* User pushing past bottom */
+    if (nearBottom && e.deltaY > 0) {
+
+        glowAmount += e.deltaY * 0.002;
+
+        if (glowAmount > 1) {
+            glowAmount = 1;
+        }
+
+        glow.style.opacity = glowAmount;
+
+        if (!animating) {
+            fadeGlow();
+        }
+    }
+
+}, { passive: true });
+
+function fadeGlow() {
+
+    animating = true;
+
+    glowAmount *= 0.93;
+
+    glow.style.opacity = glowAmount;
+
+    if (glowAmount > 0.01) {
+
+        requestAnimationFrame(fadeGlow);
+
+    } else {
+
+        glow.style.opacity = 0;
+        animating = false;
+    }
+}
+/* Subtle parallax */
+
+const parallaxImages = document.querySelectorAll('.hero-slider, img');
+
+window.addEventListener('scroll', () => {
+
+    const scrollY = window.scrollY;
+
+    parallaxImages.forEach(image => {
+
+        const rect = image.getBoundingClientRect();
+
+        /* only animate visible images */
+        if (rect.bottom > 0 && rect.top < window.innerHeight) {
+
+            const offset = scrollY * -0.035;
+
+            image.style.transform =
+                `translateY(${offset}px)`;
+        }
+    });
+
+});
+
+/* Fade in on scroll */
+
+const fadeElements = document.querySelectorAll(
+    'h6, p, img, .hero-slider'
+);
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add('fade-visible');
+
+        }
+
+    });
+
+}, {
+    threshold: 0.12
+});
+
+fadeElements.forEach(element => {
+    observer.observe(element);
+});
+
+/* Cursor-aware glow */
+
+const cursorGlow = document.querySelector('.cursor-glow');
+
+window.addEventListener('mousemove', (e) => {
+
+    cursorGlow.style.transform =
+        `translate3d(${e.clientX - 250}px, ${e.clientY - 250}px, 0)`;
+
+});
+
