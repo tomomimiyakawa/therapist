@@ -31,6 +31,7 @@
 
 html {
   min-width: 800px;
+  animation: fadePage 1.2s ease;
   
   
 
@@ -51,9 +52,14 @@ body{
     margin-left:4px;
     background-image: url('backgroundsuper.jpg');
     background-size: auto;
-    animation: fadePage 1.2s ease;
+    
+    
 
     
+}
+
+.page-fade {
+  animation: fadePage 1.2s ease;
 }
 
 @keyframes fadePage {
@@ -648,9 +654,10 @@ img{
     height: 300px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9) 68.91%);
     pointer-events: none;
-    z-index: 10;
+    z-index: 500;
 }
 }
+
 
 
 @media (max-device-width: 600px) {
@@ -975,7 +982,7 @@ img{
   width: 100%;
   height: 100%;
   background-image: url('backgroundsuperformenu.jpg');
-  z-index: 999;
+  z-index: 400;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s ease;
