@@ -188,26 +188,34 @@ p {
 
     opacity: 0;
 
-    transform: translate3d(0, 14px, 0);
-
     transition:
-        opacity 4s cubic-bezier(0.16, 1, 0.3, 1),
-        transform 4s cubic-bezier(0.16, 1, 0.3, 1);
+        opacity 5s cubic-bezier(0.16, 1, 0.3, 1);
 
     will-change: opacity, transform;
 }
 
 /* Headings + images: fade only */
 
-h6,
-.hero-slider {
+h6{
 
     opacity: 0;
 
     transition:
-        opacity 2.2s cubic-bezier(0.16, 1, 0.3, 1);
+        opacity 5s cubic-bezier(0.16, 1, 0.3, 1);
+        
 
     will-change: opacity;
+}
+
+
+ul.custom-list li {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  will-change: opacity;
+}
+
+ul.custom-list li.fade-visible {
+  opacity: 1;
 }
 
 /* Visible state */
@@ -221,18 +229,34 @@ h6,
 
 p.fade-visible {
 
-    transform: translate3d(0, 0, 0);
+    opacity: 1;
 }
+
 /* visible state */
 
 .fade-visible {
 
     opacity: 1;
-
-    transform: translate3d(0, 0, 0);
 }
 
+h6 {
+  opacity: 0;
+  transition:
+    opacity 3s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
+h6.fade-visible {
+  opacity: 1;
+}
+
+ul.custom-list li {
+    opacity: 0;
+  transition:
+    opacity 3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+ul.custom-list li.fade-visible {
+  opacity: 1;
+}
 /* visible state */
 
 
@@ -437,6 +461,24 @@ h6{
 
 }
 
+pre{
+    font-family: "Canela", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 23px;
+    font-style: normal;
+    color: #000000;
+    text-decoration: none;
+    margin-left: 0px;
+    
+    margin-bottom: 20px;
+    clear: left;
+    text-wrap: wrap;
+
+
+}
 
 
 
@@ -722,6 +764,17 @@ img{
     }
 }
 
+@media (max-device-width: 600px) {
+    pre{
+        font-size: 5vw;
+        z-index: -1000;
+        margin-left: 0vw;
+        
+        text-wrap: wrap;
+       
+
+    }
+}
 
 
 @media (max-device-width: 600px) {
@@ -947,41 +1000,6 @@ a[href^="tel"] {
 
 
 
-
-/* Cursor glow */
-
-.cursor-glow {
-
-    position: fixed;
-
-    width: 500px;
-    height: 500px;
-
-    top: 0;
-    left: 0;
-
-    pointer-events: none;
-
-    z-index: 1;
-mix-blend-mode: screen;
-
-    opacity: 0.7;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(105, 204, 194, 0.12) 0%,
-            rgba(105, 204, 194, 0.06) 28%,
-            rgba(105, 204, 194, 0.025) 45%,
-            rgba(255,255,255,0) 72%
-        );
-
-    filter: blur(40px);
-
-    will-change: transform;
-}
 
 
 

@@ -89,34 +89,14 @@ function fadeGlow() {
         animating = false;
     }
 }
-/* Subtle parallax */
+/* Subtle parallax disabled */
 
-const parallaxImages = document.querySelectorAll('.hero-slider, img');
-
-window.addEventListener('scroll', () => {
-
-    const scrollY = window.scrollY;
-
-    parallaxImages.forEach(image => {
-
-        const rect = image.getBoundingClientRect();
-
-        /* only animate visible images */
-        if (rect.bottom > 0 && rect.top < window.innerHeight) {
-
-            const offset = scrollY * -0.035;
-
-            image.style.transform =
-                `translateY(${offset}px)`;
-        }
-    });
-
-});
+// No parallax effect on scroll. This preserves the rest of the page behavior.
 
 /* Fade in on scroll */
 
 const fadeElements = document.querySelectorAll(
-    'h6, p, img, .hero-slider'
+    'h6, p, img, .hero-slider, ul.custom-list li'
 );
 
 const observer = new IntersectionObserver((entries) => {
