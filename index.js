@@ -130,3 +130,51 @@ window.addEventListener('mousemove', (e) => {
 
 });
 
+// --- FADE CAROUSEL LOGIC ---
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.hero-track-fade');
+    if (track) {
+        // Use the correct selector for items based on your HTML/CSS
+        const items = document.querySelectorAll('.carousel-item-fade'); 
+        let currentIndex = 0;
+        const totalItems = items.length;
+        const intervalTime = 2000; // Time between slides in milliseconds (2 seconds)
+
+
+        // Function to hide all images and then show the target image
+        function showSlide(index) {
+            if (totalItems === 0) return;
+
+            // 1. Deactivate all items first (fade them out)
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+            });
+
+
+            // Wait a moment for the fade-out transition to start before activating the next one
+            setTimeout(() => {
+                // 2. Activate only the target item (fade it in)
+                items[index].classList.add('active');
+            }, 50); // Small delay ensures smooth visual transition
+
+
+            currentIndex = index;
+        }
+
+
+        // Initialize: Ensure the first slide is visible when the page loads
+        if (totalItems > 0) {
+            showSlide(0);
+        }
+
+
+        // Start the carousel loop
+        setInterval(() => {
+            // Calculate the next index, looping back to 0 if we reach the end
+            const nextIndex = (currentIndex + 1) % totalItems;
+            showSlide(nextIndex);
+        }, intervalTime);
+    }
+});
+
+
