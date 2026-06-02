@@ -85,14 +85,18 @@ h1{
     font-size: 34px;
     letter-spacing: 0.025em;
     position:fixed;
-    right: 38px;
+    right: 34px;
     top:10px;
     z-index: +1000;
     animation: fadePageh1 1.2s ease;
     
     
     
+    
 
+}
+h1 a {
+    font-size: inherit;
 }
 @keyframes fadePageh1 {
     from {
