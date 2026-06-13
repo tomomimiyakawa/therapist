@@ -26,8 +26,99 @@
     font-style: normal;
 }
 
+.quickinfo {
+    margin-top: 48px;
+    display: block;
+    /* match image width and alignment */
+    width: calc(100% - 390px);
+    max-width: 800px;
+    margin-left: 40px;
+    margin-right: 350px;
+    background-color: #87e4d14f;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(99, 239, 206, 0.229);
+
+   
+}
+
+@media (max-device-width: 600px) {
+    .quickinfo {
+        width: 80vw;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        border-radius: 2.4vw;
+    }
+}
+
+/* Ensure the heading inside the quickinfo sits at the top, not vertically centered */
+.quickinfo h6 {
+    margin: 0;
+    padding: 10px 10px;
+    line-height: 1.45;
+    color: #000000;
+    font-size: 20px;
+    filter: none;
+    
+}
 
 
+.quickinfo a {
+    font-size: inherit;
+    
+}
+
+@media (max-device-width: 600px) {
+    .quickinfo h6 {
+        font-size: 5vw;
+        padding: 10px 10px;
+    }
+}
+
+
+.warning {
+    margin-top: 48px;
+    display: block;
+    /* match image width and alignment */
+    width: calc(100% - 390px);
+    max-width: 800px;
+    margin-left: 40px;
+    margin-right: 350px;
+    background-color: #e487874f;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(239, 99, 99, 0.229);
+
+   
+}
+
+@media (max-device-width: 600px) {
+    .warning {
+        width: 80vw;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        border-radius: 2.4vw;
+    }
+}
+
+/* Ensure the heading inside the warning sits at the top, not vertically centered */
+.warning h6 {
+    margin: 0;
+    padding: 10px 10px;
+    line-height: 1.45;
+    color: #000000;
+    font-size: 20px;
+    filter: none;
+}
+
+@media (max-device-width: 600px) {
+    .warning h6 {
+        font-size: 5vw;
+        padding: 10px 10px;
+    }
+}
 
 html {
   min-width: 800px;
@@ -98,6 +189,7 @@ h1{
 h1 a {
     font-size: inherit;
 }
+
 @keyframes fadePageh1 {
     from {
         opacity: 0;
@@ -121,13 +213,14 @@ h4{
 h2{
     text-align:right;
     font-family: didot, serif;
-    font-size: 20px;
-    margin-top: -20px;
+    font-size: 17px;
+    margin-top: -18px;
     position:fixed;
     right: 38px;
     top:90px;
      z-index: +1000;
     animation: fadePageh1 1.2s ease;
+    color: #00000060;
 
 
 
@@ -204,6 +297,10 @@ p {
     will-change: opacity, transform;
 }
 
+p a {
+    font-size: inherit;
+    
+}
 /* Headings + images: fade only */
 
 h6{
@@ -1008,8 +1105,10 @@ img{
   
  
 }  
- 
-}
+
+
+
+
 
 /* Show dropdown with fade-in */
 .dropdown.open .dropdown-content {
