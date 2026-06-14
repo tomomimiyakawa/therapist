@@ -26,7 +26,13 @@
     font-style: normal;
 }
 
-
+.giftvouchers {
+    font-family: "Canela", serif;
+   
+    font-style: normal;
+    font-size: 14px;
+    
+}
 
 .credits {
     font-family: "Canela", serif;
@@ -278,6 +284,26 @@ a{
   margin-right: none;
   margin-top: -115px;
 }
+@media (max-device-width: 600px) {
+    .style2 {
+        width: 60vw;
+        filter: grayscale(100%);
+        margin-left: 6vw;
+        margin-right: none;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-device-width: 600px) {
+    .style3 {
+        width: 20vw;
+        filter: grayscale(100%);
+        margin-left: 8vw;
+        margin-right: none;
+        margin-top: -50px;
+    }
+}
 
 img.styleh {
 
@@ -512,29 +538,6 @@ ul.custom-list li.fade-visible {
     }
 }
 
-aside {
-
-    display: none;
-    z-index: +1000;
-    margin-top: -20px;
-    margin-left: 40px;
-    position: fixed;
-    
-}
-
-.aside2{
-    z-index: +1000;
-    margin-top: -20px;
-    margin-left: 200px;
-    position: fixed;
-}
-
-.aside3{
-    z-index: +1000;
-    margin-top: 5px;
-    margin-left: 40px;
-    position: fixed;
-}
 
    
 
@@ -609,6 +612,18 @@ h4{
 
 }
 
+
+
+.footnote3{
+    margin-top: 540px;
+    font-family: "Canela", serif;
+  font-weight: 400;
+    font-size: 12px;
+    margin-right: 0;
+    
+
+
+}
 
 .link2{
     font-size: 18px;
