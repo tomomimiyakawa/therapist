@@ -53,6 +53,14 @@
     clear: left;
 }
 
+@media (max-device-width: 600px) {
+    .credits {
+        font-size: 3vw;
+        margin-left: 9vw;
+        margin-right: 6vw;
+    }
+}
+
 .quickinfo {
     margin-top: 48px;
     display: block;
