@@ -34,6 +34,12 @@
     
 }
 
+@media (max-device-width: 600px) {
+    .giftvouchers {
+        font-size: 3vw;
+    }
+}
+
 .credits {
     font-family: "Canela", serif;
     font-weight: 400;
