@@ -822,8 +822,8 @@ img{
     top: 0;
     left: 0;
     right: 0;
-    height: 300px;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9) 68.91%);
+    height: 240px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(255, 255, 255) 80.91%);
     pointer-events: none;
     z-index: 500;
 }
